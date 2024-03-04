@@ -15,16 +15,12 @@ This **Python trading bot** is designed to execute trading strategies on the Kra
 
 **Dependencies:** Install the required dependencies using the following command:
 
-bash
-Copy code
 pip install ccxt
 Configuration: Adjust the trading strategy parameters such as profit_threshold, loss_percent_threshold, and safety_margin as per your requirements.
 
 Usage
 Run the Bot: Execute the Python script to start the trading bot:
 
-bash
-Copy code
 python trading_bot.py
 Monitoring: Monitor the bot's output in the console for trade execution messages and any potential errors.
 
