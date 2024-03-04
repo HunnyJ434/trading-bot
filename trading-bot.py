@@ -2,24 +2,21 @@ import ccxt
 import time
 
 # Set up your API keys
-api_key = '8vKnN2BRIcs1zuFdb8YwqxtZkyZ+VT/aGXN6iIaqhaD2tbspR2BOWo0F'
-secret_key = 'AIxD+pIfqOw23VLVXfHs4XbAIdLW0RjY9wmKVaV0am9X4gg+l47lXSdE+PPVZLKh06Z+0Iz+ToTRPO1DrAjYag=='
+api_key = "Enter your Kraken or any other platform API key"
+secret_key = "Enter your secret key for the platform"
 
 # Initialize the exchange object
-exchange = ccxt.kraken({
+exchange = ccxt.kraken({ # update depending on the platform
     'apiKey': api_key,
     'secret': secret_key,
 })
 
-# Define your trading strategy
+
 def execute_trade(symbol, quantity, side, price=None):
     # Placeholder for trade execution logic
     if side == 'buy':
         print(f"Executing {side} order for {quantity} {symbol} at price {price}")
-        # Implement the logic to place a buy order on the exchange (use the appropriate CCXT method)
-        # Example: exchange.create_market_buy_order(symbol, quantity)
 
-# Example buy logic with dynamic trading pair selection
 def should_place_buy_order():
     # Fetch the account balance
     account_balance = exchange.fetch_balance()
